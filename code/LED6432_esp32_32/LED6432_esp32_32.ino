@@ -26,13 +26,11 @@ void setup()
 	pinMode(26, OUTPUT);
 	pinMode(27, OUTPUT);
 	//初始化引脚
-	Serial.begin(9600);
+	//Serial.begin(9600);
 	digitalWrite(OE, LOW);
 	digitalWrite(LE, LOW);
 	digitalWrite(CLK, LOW);
 }
-
-String json;
 
 word Rownumber = 0;
 
@@ -150,21 +148,6 @@ void display()
 		digitalWrite(LE, LOW);
 		digitalWrite(OE, LOW);
 	}
-}
-
-bool receive()
-{
-	bool op = 0;
-	while (Serial.available() != 0)
-	{
-		if (!op) {
-			json = "";
-		}
-		json += char(Serial.read());
-		delay(2);
-		op = 1;
-	}
-	return op;
 }
 
 // Add the main program code into the continuous loop() function
