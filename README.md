@@ -1,5 +1,3 @@
-[TOC]
-
 ------
 
 >  本文档由BlackWalnut——诌在行编辑，如有疑问，请联系我
@@ -196,4 +194,4 @@ void display()
 
 ## 双屏级联
 
-见目录下“双屏级联技术”文件夹
+[双屏级联](https://github.com/zhouzaihang/LED64-32-Screen-ESP32-Raspberry_Pi_3/blob/master/%E5%8F%8C%E5%B1%8F%E7%BA%A7%E8%81%94%E6%8A%80%E6%9C%AF/LED%E5%8F%8C%E5%B1%8F%E7%BA%A7%E8%81%94%E6%8E%A5%E7%BA%BF(%E6%A0%91%E8%8E%93%E6%B4%BE).md)

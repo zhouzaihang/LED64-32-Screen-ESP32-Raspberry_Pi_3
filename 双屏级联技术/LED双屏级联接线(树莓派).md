@@ -66,6 +66,6 @@
 
 ## 接线如图：
 
-![avatar](E:\WorkSpace\LED64-32-Screen-ESP32-Raspberry_Pi_3\双屏级联技术\0.jpg)
-![avatar](E:\WorkSpace\LED64-32-Screen-ESP32-Raspberry_Pi_3\双屏级联技术\1.jpg)
-![avatar](E:\WorkSpace\LED64-32-Screen-ESP32-Raspberry_Pi_3\双屏级联技术\2.jpg)
+![avatar](https://github.com/zhouzaihang/LED64-32-Screen-ESP32-Raspberry_Pi_3/blob/master/双屏级联技术/0.jpg)
+![avatar](https://github.com/zhouzaihang/LED64-32-Screen-ESP32-Raspberry_Pi_3/blob/master/双屏级联技术/1.jpg)
+![avatar](https://github.com/zhouzaihang/LED64-32-Screen-ESP32-Raspberry_Pi_3/blob/master/双屏级联技术/2.jpg)
