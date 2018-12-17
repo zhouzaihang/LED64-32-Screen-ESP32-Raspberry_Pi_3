@@ -253,23 +253,12 @@ void display()
   }
 }
 
-void setup()
-{
-  setuppinmode();
-}
-
-void loop()
-{
-  display();
-}
-
 int main (void)
-{	
+{
   wiringPiSetup();
-  setup();
+  setuppinmode();
   while(1)
   {
-    loop();
+  	display();
   }
-  return 0;
 }
