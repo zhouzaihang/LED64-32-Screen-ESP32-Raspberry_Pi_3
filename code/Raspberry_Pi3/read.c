@@ -12,10 +12,9 @@ struct msg_form{
 
 int main(int argc, char const *argv[])
 {
-    int msgqid = msgget(KEY,0777|IPC_CREAT);
-    
     do
     {
+        int msgqid = msgget(KEY,0777|IPC_CREAT);
         msgrcv(msgqid, &msg,SIZE+32,0,0);
         printf("(server)receive: %ld\n", msg.msg_type);
         for (int i = 0; i < 64; i++) {
@@ -25,8 +24,7 @@ int main(int argc, char const *argv[])
             }
             printf("\n");
         }
+        // msgctl(msgqid, IPC_RMID,0);
     } while (1);
-
-    msgctl(msgqid, IPC_RMID,0);
     return 0;
 }

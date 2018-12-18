@@ -1,5 +1,5 @@
 # 编译
-gcc -Wall -o blink blink.c -lwiringPi
+gcc -Wall -o blink blink.cpp -lwiringPi
 # 运行
 sudo ./blink
 # ffmeg视频转换为图片

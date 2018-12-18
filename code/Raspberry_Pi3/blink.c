@@ -215,22 +215,22 @@ void hc595senddata(byte datar11, byte datar12, byte datag11, byte datag12, byte 
 	//The first screen
     digitalWrite(R11, datar11 & 0x80);
     datar11 = datar11 << 1;
-    digitalWrite(G11, datag11 & 0x80);
-    datag11 = datag11 << 1;
+//    digitalWrite(G11, datag11 & 0x80);
+//    datag11 = datag11 << 1;
     digitalWrite(R12, datar12 & 0x80);
     datar12 = datar12 << 1;
-    digitalWrite(G12, datag12 & 0x80);
-    datag12 = datag12 << 1;
+//    digitalWrite(G12, datag12 & 0x80);
+//    datag12 = datag12 << 1;
 
 	//The second screen
 	digitalWrite(R21, datar21 & 0x80);
 	datar21 = datar21 << 1;
-	digitalWrite(G21, datag21 & 0x80);
-	datag21 = datag21 << 1;
+//	digitalWrite(G21, datag21 & 0x80);
+//	datag21 = datag21 << 1;
 	digitalWrite(R22, datar22 & 0x80);
 	datar22 = datar22 << 1;
-	digitalWrite(G22, datag22 & 0x80);
-	datag22 = datag22 << 1;
+//	digitalWrite(G22, datag22 & 0x80);
+//	datag22 = datag22 << 1;
 
     digitalWrite(CLK, HIGH);//拉高时钟信号，上升沿发送数据
     digitalWrite(CLK, LOW);//恢复低电平
