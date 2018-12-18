@@ -17,7 +17,7 @@ using namespace cv;
 void send_msg(int type){
     int msg_qid = msgget(KEY, 0777);
     msg.msg_type = type;
-    for(int i = 0; i < 15; i++){
+    for(int i = 0; i < 50; i++){
         msgsnd(msg_qid,&msg,SIZE,0);
     }
     // for (int i = 0; i < 64; i++) {
@@ -42,7 +42,6 @@ int main() {
 //        std::cout << "w: " << w << " h: " << h;
         for (int j = 0; j < h; ++j) {
             for (int k = 0; k < w; ++k) {
-                // 白色亮，黑色暗
                 msg.msg_text[k*8+j/8] = (unsigned char) (image.at<uchar>(k, j) >= 125 ? (msg.msg_text[k*8+j / 8] << 1) | 0x01 :
                                                    (msg.msg_text[k*8+j / 8] << 1) & 0xFE);
             }
