@@ -4,11 +4,51 @@
 >
 >  部分图片源于百度
 
+目录
+=================
+
+* [控制 LED 灯板播放视频](#控制-led-灯板播放视频)
+	* [项目说明](#项目说明)
+		* [YouTube 演示视频](#youtube-演示视频)
+		* [Bilibili 演示视频](#bilibili-演示视频)
+	* [文件说明](#文件说明)
+	* [如何不用驱动板点亮 LED 灯板](#如何不用驱动板点亮-led-灯板)
+		* [接线](#接线)
+		* [把视频处理为图片](#把视频处理为图片)
+		* [LED 显示并接收](#led-显示并接收)
+		* [处理图片数据并发送](#处理图片数据并发送)
+		* [部署](#部署)
+	* [LED点阵原理](#led点阵原理)
+		* [LED点阵点亮原理](#led点阵点亮原理)
+		* [基本结构](#基本结构)
+		* [双色点阵原理](#双色点阵原理)
+		* [LED扫描方式](#led扫描方式)
+		* [HUB08接口](#hub08接口)
+		* [接口说明](#接口说明)
+		* [接线示例](#接线示例)
+	* [点亮屏幕思路](#点亮屏幕思路)
+	* [代码实现（以ESP32代码为例）](#代码实现以esp32代码为例)
+		* [初始化](#初始化)
+		* [74HC138芯片进行行选](#74hc138芯片进行行选)
+		* [74HC138基本原理](#74hc138基本原理)
+		* [代码实现](#代码实现)
+		* [74HC595芯片进行列驱动](#74hc595芯片进行列驱动)
+		* [74HC595基本原理](#74hc595基本原理)
+		* [代码实现](#代码实现-1)
+		* [行选列控制实现显示](#行选列控制实现显示)
+		* [双屏级联](#双屏级联)
+
 ## 项目说明
 
 这里是通过树莓派的引脚，通过模拟 `SPI` 信号实现控制的，具体的原理，请看在后文的点亮思路
 
-[![LED Play Video BY RaspBerry Pi](http://img.youtube.com/vi/SHycTYvMqY8/0.jpg)](http://www.youtube.com/watch?v=SHycTYvMqY8 "LEDPlayVideoBYRaspBerryPi")
+### YouTube 演示视频
+
+[![LED Play Video BY RaspBerry Pi](http://img.youtube.com/vi/SHycTYvMqY8/0.jpg)](http://www.youtube.com/watch?v=SHycTYvMqY8 "YouTube Video")
+
+### Bilibili 演示视频
+
+[![LED Play Video BY RaspBerry Pi](http://i0.hdslb.com/bfs/archive/bf6ef06f403d2d669db4af8104aea0265726aafa.jpg)](https://www.bilibili.com/video/av45062449/ "Bilibili Video")
 
 ## 文件说明
 

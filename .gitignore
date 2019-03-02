@@ -2,3 +2,5 @@ code/Raspberry_Pi3/.idea
 code/Raspberry_Pi3/cmake*
 code/Raspberry_Pi3/movie/*
 code/Raspberry_Pi3/CMakeLists.txt
+
+code/Raspberry_Pi3/\.vscode/
